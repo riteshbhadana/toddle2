@@ -94,7 +94,7 @@ def colour_status(val):
     }.get(val, "")
 
 st.dataframe(
-    out.style.applymap(colour_status, subset=["Status"]),
+    out.style.map(colour_status, subset=["Status"]),
     use_container_width=True,
 )
 
